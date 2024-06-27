@@ -1,0 +1,29 @@
+### list all person
+GET http://localhost:3000/person
+
+### get one person
+GET http://localhost:3000/person/dev_AkGvKdvtfveTbgGHKBMnTz
+
+### create person
+POST http://localhost:3000/person
+Content-Type: application/json
+
+{
+    "name": "Juliana Barbosa",
+    "cpf":"014.245.923-12",
+    "email":"julianabs@gmail.com",
+    "dateOfBirth":"1998-05-05",
+    "isActive":true
+
+}
+
+### update person
+PATCH http://localhost:3000/person/dev_U7OosSwF_231LSW4nRe63
+Content-Type: application/json
+
+{
+    "isActive":false
+}
+
+### delete person
+DELETE http://localhost:3000/person/dev_oGtYOGkpqiU-DDRlt3G0s
